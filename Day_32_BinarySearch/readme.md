@@ -9,12 +9,12 @@
 
 <li>Or if the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half.
 
-Otherwise, narrow it to the upper half.
+<li>Otherwise, narrow it to the upper half.
 
-Repeatedly check from the second point until the value is found or the interval is empty.
-
+<li>Repeatedly check from the second point until the value is found or the interval is empty.
+</li></ul>
 Binary Search Algorithm can be implemented in the following two ways
 
-Iterative Method
+<ul><li>Iterative Method
 
-Recursive Method
+<li>Recursive Method</li></ul>
