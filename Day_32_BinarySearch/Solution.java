@@ -1,3 +1,4 @@
+import java.util.Scanner;
 // Java implementation of recursive Binary Search
 class BinarySearch {
 
@@ -128,11 +129,12 @@ class BinarySearch {
         int x = sc.nextInt();
         
         System.out.println("Select the method through which you want to perform Binary Search-/n1 for Iterative method/n2 or Recursive method");
-        int ch=nextInt();
+        int ch=sc.nextInt();
+        int result=-1;
         switch (ch){
-            case 1:int result = ob.binarySearchR(arr, 0, n - 1, x);
+            case 1:result = ob.binarySearchR(arr, 0, n - 1, x);
                    break;
-            case 2:int result = ob.binarySearch(arr, 0, n - 1, x);
+            case 2:result = ob.binarySearch(arr, 0, n - 1, x);
 
                    break;
             default: System.out.println("Wrong choice...");
@@ -140,14 +142,10 @@ class BinarySearch {
         
 
         if (result == -1)
-
             System.out.println("Element not present");
 
         else
-
-            System.out.println("Element found at index "
-
-                               + result);
+            System.out.println("Element found at index "+ result);
 
     }
 
