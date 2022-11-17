@@ -1,2 +1,2 @@
 # 100DaysOfCode
-100 continuos days of coding and learning something new
+100 continous days of coding and learning something new
