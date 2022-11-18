@@ -1,0 +1,85 @@
+DAY 34:
+========
+
+CODING LANGUAGE:
+==================
+
+JAVA
+
+===============================================================================================================================================================
+
+Question:
+==========
+
+Write a program to cheak whether it is magic number or not.magic number is a number whose digitb sum must come 1 (325=3+2+5=10 then again 1+0=1,so it is magic number.)
+
+========================================================================================================================================================================
+
+INPUT:
+=======
+Enter a number to check whether it is a magic number or not
+325
+
+OUTPUT:
+========
+Yes it is a magic number
+
+======================================================================
+
+INPUT:
+======
+Enter a number to check whether it is a magic number or not
+91
+
+OUTPUT:
+=======
+Yes it is a magic numbe
+
+=========================================================================
+
+INPUT:
+======
+Enter a number to check whether it is a magic number or not
+99
+
+OUTPUT:
+========
+No it is not a magic number
+
+==================================================================================================================================================================
+
+
+CODE:
+=======
+
+
+import java.util.*;
+public class Magic_Number{
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number to check whether it is a magic number or not");
+        int m=sc.nextInt();
+        int i=m,d=0,sum=0;
+        while(m>9)
+        {
+            while(i>0)
+        {
+        d=i%10;
+        sum+=d;
+        i/=10;
+        }
+        d=0;
+        i=sum;
+        m=sum;
+        sum=0;
+    }
+    if(m==1)
+    System.out.println("Yes it is a magic number");
+    else
+    System.out.println("No it is not a magic number");
+}
+}
+
+================================================================================================================================================================
+
