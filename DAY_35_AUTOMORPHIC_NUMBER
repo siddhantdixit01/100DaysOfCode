@@ -1,0 +1,114 @@
+DAY 35
+=======
+
+CODING LANGUAGE:
+=================
+
+JAVA
+
+===================================================
+
+QUESTION:
+===========
+
+WRITE A PROGRAM TO PRINT WHETHER THE ENTERED NUMBER IS AN AUTOMORPHIC NUMBER OR NOT.
+AN AUTOMORPHIC NUMBER IS A NUMBER WHICH IS PRESENT AT THE LAST OF ITS SQUARE.
+FOR EXAMPLE:
+25*25=625
+25 IS PRESENT AT THE END OF 625 SO 25 IS AN AUTOMORPHIC NUMBER
+
+=========================================================================================================================================================
+
+INPUT:
+=======
+
+Enter a number
+625
+
+OUTPUT:
+========
+
+Its a Automorphic number
+
+
+==============================================
+
+
+
+INPUT:
+=======
+
+Enter a number
+76
+
+OUTPUT:
+========
+
+Its a Automorphic number
+
+
+==============================================
+
+INPUT:
+=======
+
+Enter a number
+25
+
+OUTPUT:
+========
+
+Its a Automorphic number
+
+==============================================
+
+INPUT:
+=======
+
+Enter a number
+1001
+
+OUTPUT:
+========
+
+no its not a Automorphic number
+
+==============================================
+
+INPUT:
+=======
+
+Enter a number
+96
+
+OUTPUT:
+========
+
+no its not a Automorphic number
+
+=========================================================================================================================================================
+
+CODE:
+======
+
+import java.util.*;
+public class Automorphic {
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        int n=sc.nextInt();
+        int sum=0,i=n,c=0;
+while (i>0)
+{
+    c++;
+    i/=10;
+}
+if(((n*n)%((int)Math.pow(10,c)))==n)
+System.out.println("Its a Automorphic number");
+else
+System.out.println("no its not a Automorphic number");
+}
+}
+
+=========================================================================================================================================================
