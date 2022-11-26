@@ -67,11 +67,13 @@ public class SinglyLinkedList {
             while(i<pos){
                 temp=temp.next;
                 i++;
-            }    
-            if(temp==null)
-                System.out.println("Cannot Insert...");
+                if(temp==null){
+                    System.out.println("Cannot Insert...");
+                    return;
+                }
 
-            else if(temp.next == null){
+            }    
+            if(temp.next == null){
                 temp.next=newNode;
             }
             else{
@@ -120,12 +122,15 @@ public class SinglyLinkedList {
             while(i<pos){
                 temp1=temp;
                 temp=temp.next;
+                
+            if(temp==null){
+                System.out.println("Cannot Delete...");
+                return;
+            }
                 i++;
             }
-            if(temp==null)
-                System.out.println("Cannot Delete...");
-            
-            else if(temp==head){
+
+            if(temp==head){
                 head=head.next;
                 temp=null;
             }
