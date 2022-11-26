@@ -22,7 +22,7 @@ quickSort(arr[], low, high) {
     }
 
 }
-<h2> Partition</h2>
+<h4> Partition</h4>
  This function takes last element as pivot, places the pivot element at its correct position in sorted array, and places all smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot 
 .<br><br>
 partition (arr[], low, high)
