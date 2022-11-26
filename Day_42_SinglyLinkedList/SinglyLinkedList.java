@@ -124,11 +124,7 @@ public class SinglyLinkedList {
             }
             if(temp==null)
                 System.out.println("Cannot Delete...");
-
-            else if(temp.next == null){
-                temp1.next=null;
-                temp=null;
-            }
+            
             else if(temp==head){
                 head=head.next;
                 temp=null;
