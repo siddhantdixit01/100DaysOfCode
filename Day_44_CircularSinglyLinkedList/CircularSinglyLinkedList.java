@@ -61,7 +61,7 @@ public class CircularSinglyLinkedList {
        }    
        else { 
            int i=1;
-           while(i<loc){
+           while(i<=loc){
                 head=head.next;
                 i++;
             }
