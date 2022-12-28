@@ -26,18 +26,18 @@ class Result {
     public static List<Integer> matchingStrings(List<String> stringList, List<String> queries) {
     // Write your code here
     
-    List<Integer> ans=new ArrayList<>();
-    int c=0;
-    for(int i=0;i<queries.size();i++){
-        c=0;
-        for(int j=0;j<stringList.size();j++){
-            if(stringList.get(j).equals(queries.get(i)))
-                c++;
+        List<Integer> ans=new ArrayList<>();
+        int c=0;
+        for(int i=0;i<queries.size();i++){
+            c=0;
+            for(int j=0;j<stringList.size();j++){
+                if(stringList.get(j).equals(queries.get(i)))
+                    c++;
+            }
+            ans.add(c);
         }
-        ans.add(c);
-    }
-    
-    return ans;
+
+        return ans;
     }
 }
 
